@@ -11,7 +11,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.abhrp.navigationdemo.dummy.DummyContent
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), BlankFragment.OnFragmentInteractionListener, FragmentOne.OnFragmentInteractionListener, ItemFragment.OnListFragmentInteractionListener {
+class MainActivity : AppCompatActivity(), FragmentOne.OnFragmentInteractionListener, ItemFragment.OnListFragmentInteractionListener {
 
     override fun onFragmentInteraction(uri: Uri) {
 
@@ -21,23 +21,6 @@ class MainActivity : AppCompatActivity(), BlankFragment.OnFragmentInteractionLis
 
     }
 
-//    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
-//        when (item.itemId) {
-//            R.id.navigation_home -> {
-////                message.setText(R.string.title_home)
-//                return@OnNavigationItemSelectedListener true
-//            }
-//            R.id.navigation_dashboard -> {
-////                message.setText(R.string.title_dashboard)
-//                return@OnNavigationItemSelectedListener true
-//            }
-//            R.id.navigation_notifications -> {
-////                message.setText(R.string.title_notifications)
-//                return@OnNavigationItemSelectedListener true
-//            }
-//        }
-//        false
-//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
